@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #034e7b;
+    /* margin-left: 15px; */
+    position: fixed;
+    z-index: 2000;
+    /* background-color:#dcbebe; */
+    /* float: left; */
+    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+}
+.navbar img{
+    width: 100px;
+    padding-top: 41PX;
+    padding-left: -53px;
+    margin-left: -17px;
+    position: fixed;
+}

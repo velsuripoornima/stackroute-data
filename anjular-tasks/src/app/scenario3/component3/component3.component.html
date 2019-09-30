@@ -1,0 +1,9 @@
+<p>component3 works!</p>
+<div>
+    <!-- input tag for user entering the input -->
+    <label>scenario 3</label>
+    <input type="text" #name>
+    <button (click)="displayName(name.value)">click</button>
+</div>
+<!-- do property binding for transfer the input -->
+<app-component4 [component3]="name.value"></app-component4>

@@ -1,0 +1,23 @@
+#joinus{
+  padding-top: 10%;
+	text-align: center;
+	color: black;
+}
+p{
+  text-align:left;
+}
+#join{
+	width:100%;
+	height: 36rem;
+}
+
+#join{
+	background: #C61F70;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+	padding-top: 55px;
+}
+.container-fluid{
+width: 100%;
+}

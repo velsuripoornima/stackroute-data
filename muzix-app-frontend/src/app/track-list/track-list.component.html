@@ -1,0 +1,30 @@
+ <div style="padding-top: 100px">
+<!-- <div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="1%" fxLayoutAlign="center"> -->
+    <div class="cardList">
+      
+      <!-- <div *ngFor="let song of tracks"> -->
+      <mat-card class="card-picture"  *ngFor="let song of tracks">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div> 
+             <mat-card-title>Track</mat-card-title>
+            <mat-card-subtitle>{{song.name}}</mat-card-subtitle>
+          </mat-card-header>
+          <a href="{{song.url}}" ><img mat-card-image src="assets/img/music.jpg" alt="Photo of a Shiba Inu"></a>
+          <mat-card-content>
+            <p>
+              Artist Name:{{song.artist}}
+            </p>
+            <p>
+              Song: {{song.name}}
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="deleteTrack(song)">Delete <mat-icon>delete</mat-icon></button>
+            <button mat-raised-button (click)="openDialog(song)">COMMENT<mat-icon> comment</mat-icon></button>
+          </mat-card-actions> 
+        </mat-card>  
+        </div>
+        </div>
+        <!-- </div> -->
+
+        

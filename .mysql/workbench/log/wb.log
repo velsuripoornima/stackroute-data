@@ -1,0 +1,34 @@
+10:45:16 [INF][      WBContext]: Parsing application arguments.
+10:45:16 [INF][      WBContext]:     /usr/lib/mysql-workbench/mysql-workbench-bin
+10:45:16 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /usr/share/mysql-workbench
+	plugin path: /usr/lib/mysql-workbench/plugins
+	struct path: /usr/share/mysql-workbench/grt
+	module path: /usr/lib/mysql-workbench/modules
+	library path: /usr/share/mysql-workbench/libraries
+	user data dir: /home/poornima/.mysql/workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+10:45:16 [INF][      WBContext]: WbContext::init
+10:45:16 [INF][            WBA]: Looking for extension modules for WBA...
+10:45:16 [INF][            WBA]: 0 extension modules found
+10:45:16 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:21: link 'com.mysql.rdbms.mysql.datatype.timestamp' <object db.SimpleDatatype> key=simpleType could not be resolved
+10:45:16 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:106: link 'com.mysql.rdbms.mysql.datatype.varchar' <object db.SimpleDatatype> key=simpleType could not be resolved
+10:45:16 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:229: link 'com.mysql.rdbms.mysql.datatype.int' <object db.SimpleDatatype> key=simpleType could not be resolved
+10:45:17 [WRN][            grt]: /home/poornima/.mysql/workbench/connections.xml:15: link 'e8238e7b-af82-11e9-8669-1002b5e83906' <object GrtObject> key=owner could not be resolved
+10:45:17 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 6.3.8 CE build 1228 (64 bit)
+	Configuration Directory: /home/poornima/.mysql/workbench
+	Data Directory: /usr/share/mysql-workbench
+	Cairo Version: 1.15.10
+	OS: Linux 4.15.0-55-generic
+	CPU: 4x Intel(R) Core(TM) i5-5300U CPU @ 2.30GHz (2311.125MHz) - 7.67GiB RAM
+	Distribution: Ubuntu 18.04.2 LTS
+
+	Fips mode enabled: no
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ENTRY timestamp='12:28:22  IST'>create database college</ENTRY>
+<ENTRY timestamp='12:28:50  IST'>show databases</ENTRY>
+<ENTRY timestamp='12:31:46  IST'>create table student(id int primary key,name char(25))</ENTRY>
+<ENTRY timestamp='12:32:09  IST'>use college</ENTRY>
+<ENTRY timestamp='~'>create table student(id int primary key,name char(25))</ENTRY>
+<ENTRY timestamp='12:33:16  IST'>insert into student values(&quot;abc&quot;)</ENTRY>
+<ENTRY timestamp='12:33:31  IST'>insert into student values(1,&quot;abc&quot;)</ENTRY>
+<ENTRY timestamp='12:34:17  IST'>desc student</ENTRY>
+<ENTRY timestamp='02:14:38  IST'>create database NIIT</ENTRY>
+<ENTRY timestamp='02:14:48  IST'>use NIIT</ENTRY>
+<ENTRY timestamp='~'>CREATE TABLE IF NOT EXISTS `college`.`FacultyDetails` (&#x0A;  `Faculty_Id` CHAR(20) NOT NULL,&#x0A;  `Title` CHAR(7) NULL,&#x0A;  `Faculty_Name` CHAR(30) NULL,&#x0A;  `Faculty_Location` CHAR(30) NULL COMMENT &apos;&#x09;&apos;,&#x0A;  `Faculty_Track` CHAR(15) NULL,&#x0A;  `Faculty_Qualification` CHAR(100) NULL,&#x0A;  `Faculty_Experiance` INT NULL,&#x0A;  `Faculty_Email` CHAR(100) NULL,&#x0A;  `Faculty_Password` CHAR(20) NULL,&#x0A;  `FacultyDetailscol` VARCHAR(45) NULL,&#x0A;  PRIMARY KEY (`Faculty_Id`))&#x0A;ENGINE = InnoDB</ENTRY>
+<ENTRY timestamp='02:15:51  IST'>CREATE TABLE IF NOT EXISTS `NIIT`.`FacultyDetails` (&#x0A;  `Faculty_Id` CHAR(20) NOT NULL,&#x0A;  `Title` CHAR(7) NULL,&#x0A;  `Faculty_Name` CHAR(30) NULL,&#x0A;  `Faculty_Location` CHAR(30) NULL COMMENT &apos;&#x09;&apos;,&#x0A;  `Faculty_Track` CHAR(15) NULL,&#x0A;  `Faculty_Qualification` CHAR(100) NULL,&#x0A;  `Faculty_Experiance` INT NULL,&#x0A;  `Faculty_Email` CHAR(100) NULL,&#x0A;  `Faculty_Password` CHAR(20) NULL,&#x0A;  `FacultyDetailscol` VARCHAR(45) NULL,&#x0A;  PRIMARY KEY (`Faculty_Id`))&#x0A;ENGINE = InnoDB</ENTRY>
+<ENTRY timestamp='02:22:43  IST'>CREATE TABLE `NIIT`.`BatchDetails` (&#x0A;  `Batch_Id` CHAR(20) NOT NULL,&#x0A;  `Batch_Faculty` CHAR(30) NULL,&#x0A;  `Batch_DEPT_Name` CHAR(30) NULL,&#x0A;  PRIMARY KEY (`Batch_Id`))</ENTRY>
+<ENTRY timestamp='02:26:07  IST'>CREATE TABLE `NIIT`.`ModuleDetails` (&#x0A;  `Module_Id` CHAR(20) NOT NULL,&#x0A;  `Module_Name` CHAR(40) NULL,&#x0A;  `Module_Duration` INT NULL,&#x0A;  PRIMARY KEY (`Module_Id`))</ENTRY>
+<ENTRY timestamp='02:30:48  IST'>CREATE TABLE `NIIT`.`StudentDetails` (&#x0A;  `Student_Id` CHAR(20) NOT NULL,&#x0A;  `Title` CHAR(7) NULL,&#x0A;  `Student_Name` CHAR(30) NULL,&#x0A;  `Student_Location` CHAR(30) NULL,&#x0A;  `Student_Track` CHAR(20) NULL,&#x0A;  `Student_Qualification` CHAR(200) NULL,&#x0A;  `Student_Email` CHAR(100) NULL,&#x0A;  `Student_Password` VARCHAR(45) NULL,&#x0A;  PRIMARY KEY (`Student_Id`))</ENTRY>
+<ENTRY timestamp='02:33:46  IST'>CREATE TABLE `NIIT`.`Questions` (&#x0A;  `Question_Id` CHAR(20) NOT NULL,&#x0A;  `Module_Id` CHAR(20) NULL,&#x0A;  `Question_Text` CHAR(900) NULL,&#x0A;  PRIMARY KEY (`Question_Id`))</ENTRY>
+<ENTRY timestamp='02:34:06  IST'>~</ENTRY>
+<ENTRY timestamp='02:34:38  IST'>~</ENTRY>
+<ENTRY timestamp='02:37:08  IST'>CREATE TABLE `NIIT`.`Questions` (&#x0A;  `Question_Id` CHAR(20) NOT NULL,&#x0A;  `Module_Id` CHAR(20) NULL,&#x0A;  `Question_Text` VARCHAR(45) NULL,&#x0A;  PRIMARY KEY (`Question_Id`))</ENTRY>
+<ENTRY timestamp='02:41:03  IST'>CREATE TABLE `NIIT`.`Student_Status` (&#x0A;  `Student_Id` CHAR(20) NULL,&#x0A;  `Module_Id` CHAR(20) NULL,&#x0A;  `Start_Date` CHAR(20) NULL,&#x0A;  `End_Date` CHAR(20) NULL,&#x0A;  `AFeedbackGiven` CHAR(20) NULL,&#x0A;  `TFeedbackGiven` VARCHAR(45) NULL)</ENTRY>
+<ENTRY timestamp='02:43:51  IST'>CREATE TABLE `NIIT`.`Faculty_Feedback` (&#x0A;  `Faculty_Id` CHAR(20) NULL COMMENT &apos;&#x09;&apos;,&#x0A;  `Question_Id` CHAR(20) NULL,&#x0A;  `Batch_Id` CHAR(20) NULL,&#x0A;  `Faculty_Feedbackcol` VARCHAR(45) NULL,&#x0A;  `Faculty_Rating` INT NULL)</ENTRY>
+<ENTRY timestamp='02:47:18  IST'>CREATE TABLE `NIIT`.`Student_Feedback` (&#x0A;  `Student_Id` CHAR(20) NULL,&#x0A;  `Question_Id` CHAR(20) NULL,&#x0A;  `Module_Id` CHAR(20) NULL,&#x0A;  `Student_Rating` VARCHAR(45) NULL)</ENTRY>
+<ENTRY timestamp='02:49:05  IST'>CREATE TABLE `NIIT`.`Login_Details` (&#x0A;  `User_Id` CHAR(20) NOT NULL,&#x0A;  `User_Password` VARCHAR(45) NULL,&#x0A;  PRIMARY KEY (`User_Id`))</ENTRY>

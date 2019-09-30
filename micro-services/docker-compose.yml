@@ -1,0 +1,70 @@
+version: "2.1"
+services:
+
+  API-gateway:
+    image: zuul-service
+    container_name: zuul-service
+    build: API-gateway/
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - Eurekaserver
+      - Musix-App-Assignment
+    ports:
+      - 8091:8091
+    healthcheck:
+      test: "exit 0"
+
+
+  Eurekaserver:
+    image: eureka-servcie:latest
+    container_name: eureka-server
+    build: Eureka-server/
+    restart: always
+    network_mode: host
+    hostname: localhost
+    ports:
+      - 8761:8761
+    healthcheck:
+      test: "exit 0"
+
+  Config-server:
+    image: config-service
+    container_name: config-service
+    build: Config-server/
+    restart: always
+    network_mode: host
+    hostname: localhost
+    ports:
+      - 8888:8888
+    healthcheck:
+      test: "exit 0"
+
+
+  Musix-App-Assignment:
+    image: musix-app-assignment
+    container_name: muzix-app-assignment
+    build: Musix-App-Assignment/
+    restart: always
+    network_mode: host
+    hostname: localhost
+    depends_on:
+      - Eurekaserver
+      - Config-server
+      - mongo
+    ports:
+      - 8080:8080
+    healthcheck:
+      test: "exit 0"
+
+  mongo:
+    image: mongo:3.4-jessie
+    container_name: mongo
+    ports:
+      - 27017:27017
+    network_mode: host
+    hostname: localhost
+    restart: always
+    healthcheck:
+      test: "exit 0"

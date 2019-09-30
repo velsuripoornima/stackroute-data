@@ -1,0 +1,49 @@
+
+.spacer {
+    flex-grow: 1;
+}
+
+.medium-list {
+    margin: auto;
+    width: 350px;
+    padding: 1%;
+    padding-top: 12%;
+    padding-bottom: 10%;
+    margin-right: 4%;
+  }
+
+  .list-viewer-wrapper {
+    background-color: white;
+    box-shadow: 8px 8px 15px #888888 !important;
+    padding: 15px 20px 15px 20px;
+     background-color: white;
+      border-style: outset;
+
+  }
+
+  .list-header-title {
+    /* color: rgba(0, 0, 0, .54); */
+    /* background: rgba(0, 0, 0, .03); */
+    padding: 8px 20px;
+    font-weight: bold;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .divider {
+    margin-top: 10px !important;
+  }
+
+ .bg{
+  background-image: url("/assets/login.jpg");
+     height: 100%;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width:100%;
+     display:flex;
+ }

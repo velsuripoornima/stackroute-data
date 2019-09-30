@@ -1,0 +1,61 @@
+img{
+    width: 90%;
+    height:600px;
+    /* padding-top: 20px; */
+    /*margin-top: 92px; */
+}
+
+#join-us{
+	background: #D7DBDD ;
+	text-align: center;
+	color: white;
+	font-size: 2rem;
+	/*width: 100vw;*/
+
+}
+
+#joinus{
+padding-top:15%;
+	text-align: center;
+	color: black;
+}
+
+#join{
+	width:101.5%;
+	height: 50rem;
+}
+
+#join{
+	background: #C61F70;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+}
+
+.jumbotron{
+  margin-bottom:0px;
+  background-color:#ffc107;
+ /* background-image: url("/assets/background1.jpg");*/
+}
+
+/*.hero-body {
+    width: 100%;
+}*/
+
+#join-us img{
+  height:550px;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#text1 {
+    color: black;
+    text-align: center;
+}
+#carousel{
+  padding-top:90px;
+}
+

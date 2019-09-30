@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ENTRY timestamp='08:29:41  IST'>create database muzix</ENTRY>
+<ENTRY timestamp='09:13:42  IST'>select * from track</ENTRY>
+<ENTRY timestamp='09:14:22  IST'>use muzix</ENTRY>
+<ENTRY timestamp='~'>select * from track</ENTRY>
+<ENTRY timestamp='10:47:36  IST'>SELECT * FROM track where (name = &quot;track&quot; and id=&quot;3&quot;) or (name=&quot;track&quot; and id=0)</ENTRY>
+<ENTRY timestamp='10:48:11  IST'>SELECT * FROM track where (name=&quot;track&quot; and id=0)</ENTRY>
+<ENTRY timestamp='10:51:24  IST'>set @name = &apos;track&apos;</ENTRY>
+<ENTRY timestamp='~'>set @id = 0</ENTRY>
+<ENTRY timestamp='~'>SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)</ENTRY>
+<ENTRY timestamp='10:52:36  IST'>set @name = null</ENTRY>
+<ENTRY timestamp='~'>set @id = 0</ENTRY>
+<ENTRY timestamp='~'>SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)</ENTRY>
+<ENTRY timestamp='10:52:56  IST'>set @name = null</ENTRY>
+<ENTRY timestamp='~'>set @id = 2</ENTRY>
+<ENTRY timestamp='~'>SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)</ENTRY>

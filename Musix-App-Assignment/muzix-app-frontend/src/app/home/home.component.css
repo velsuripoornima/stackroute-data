@@ -1,0 +1,12 @@
+ .home{
+    background-color: aliceblue;
+} 
+
+.home p{
+    color: gray;
+    text-align: center;
+    width: 100% ;
+}
+.navbar p{
+    max-width: 100px;
+}

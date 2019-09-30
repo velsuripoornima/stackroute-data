@@ -1,0 +1,334 @@
+[1, 12:28:22] create database college: Running...
+[1, 12:28:22] create database college: 1 row(s) affected
+[2, 12:28:50] show databases: Running...
+[2, 12:28:50] show databases: Fetching...
+[2, 12:28:50] show databases: 5 row(s) returned
+[3, 12:31:46] create table student(id int primary key,name char(25)): Running...
+[3, 12:31:46] create table student(id int primary key,name char(25)): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[4, 12:32:09] use college: Running...
+[4, 12:32:09] use college: 0 row(s) affected
+[5, 12:32:09] create table student(id int primary key,name char(25)): Running...
+[5, 12:32:09] create table student(id int primary key,name char(25)): 0 row(s) affected
+[6, 12:33:16] insert into student values("abc"): Running...
+[6, 12:33:16] insert into student values("abc"): Error Code: 1136. Column count doesn't match value count at row 1
+[7, 12:33:31] insert into student values(1,"abc"): Running...
+[7, 12:33:31] insert into student values(1,"abc"): 1 row(s) affected
+[8, 12:34:17] desc student: Running...
+[8, 12:34:17] desc student: Fetching...
+[8, 12:34:17] desc student: 2 row(s) returned
+[9, 14:14:38] create database NIIT: Running...
+[9, 14:14:38] create database NIIT: 1 row(s) affected
+[10, 14:14:48] use NIIT: Running...
+[10, 14:14:48] use NIIT: 0 row(s) affected
+[11, 14:14:48] CREATE TABLE IF NOT EXISTS `college`.`FacultyDetails` (
+  `Faculty_Id` CHAR(20) NOT NULL,
+  `Title` CHAR(7) NULL,
+  `Faculty_Name` CHAR(30) NULL,
+  `Faculty_Location` CHAR(30) NULL COMMENT '	',
+  `Faculty_Track` CHAR(15) NULL,
+  `Faculty_Qualification` CHAR(100) NULL,
+  `Faculty_Experiance` INT NULL,
+  `Faculty_Email` CHAR(100) NULL,
+  `Faculty_Password` CHAR(20) NULL,
+  `FacultyDetailscol` VARCHAR(45) NULL,
+  PRIMARY KEY (`Faculty_Id`))
+ENGINE = InnoDB: Running...
+[11, 14:14:48] CREATE TABLE IF NOT EXISTS `college`.`FacultyDetails` (
+  `Faculty_Id` CHAR(20) NOT NULL,
+  `Title` CHAR(7) NULL,
+  `Faculty_Name` CHAR(30) NULL,
+  `Faculty_Location` CHAR(30) NULL COMMENT '	',
+  `Faculty_Track` CHAR(15) NULL,
+  `Faculty_Qualification` CHAR(100) NULL,
+  `Faculty_Experiance` INT NULL,
+  `Faculty_Email` CHAR(100) NULL,
+  `Faculty_Password` CHAR(20) NULL,
+  `FacultyDetailscol` VARCHAR(45) NULL,
+  PRIMARY KEY (`Faculty_Id`))
+ENGINE = InnoDB: 0 row(s) affected
+[12, 14:15:51] CREATE TABLE IF NOT EXISTS `NIIT`.`FacultyDetails` (
+  `Faculty_Id` CHAR(20) NOT NULL,
+  `Title` CHAR(7) NULL,
+  `Faculty_Name` CHAR(30) NULL,
+  `Faculty_Location` CHAR(30) NULL COMMENT '	',
+  `Faculty_Track` CHAR(15) NULL,
+  `Faculty_Qualification` CHAR(100) NULL,
+  `Faculty_Experiance` INT NULL,
+  `Faculty_Email` CHAR(100) NULL,
+  `Faculty_Password` CHAR(20) NULL,
+  `FacultyDetailscol` VARCHAR(45) NULL,
+  PRIMARY KEY (`Faculty_Id`))
+ENGINE = InnoDB: Running...
+[12, 14:15:51] CREATE TABLE IF NOT EXISTS `NIIT`.`FacultyDetails` (
+  `Faculty_Id` CHAR(20) NOT NULL,
+  `Title` CHAR(7) NULL,
+  `Faculty_Name` CHAR(30) NULL,
+  `Faculty_Location` CHAR(30) NULL COMMENT '	',
+  `Faculty_Track` CHAR(15) NULL,
+  `Faculty_Qualification` CHAR(100) NULL,
+  `Faculty_Experiance` INT NULL,
+  `Faculty_Email` CHAR(100) NULL,
+  `Faculty_Password` CHAR(20) NULL,
+  `FacultyDetailscol` VARCHAR(45) NULL,
+  PRIMARY KEY (`Faculty_Id`))
+ENGINE = InnoDB: 0 row(s) affected
+[13, 14:22:39] Apply changes to BatchDetails: Preparing...
+[13, 14:22:43] Applying changes to BatchDetails...: 
+[13, 14:22:43] : Changes applied to BatchDetails
+[13, 14:22:46] Apply changes to BatchDetails: Changes applied
+[14, 14:26:03] Apply changes to ModuleDetails: Preparing...
+[14, 14:26:07] Applying changes to ModuleDetails...: 
+[14, 14:26:07] : Changes applied to ModuleDetails
+[14, 14:26:09] Apply changes to ModuleDetails: Changes applied
+[15, 14:30:45] Apply changes to StudentDetails: Preparing...
+[15, 14:30:48] Applying changes to StudentDetails...: 
+[15, 14:30:48] : Changes applied to StudentDetails
+[15, 14:30:52] Apply changes to StudentDetails: Changes applied
+[16, 14:33:35] Apply changes to Questions: Preparing...
+[16, 14:33:46] Applying changes to Questions...: 
+[16, 14:33:52] Apply changes to Questions: Error 1074: Column length too big for column 'Question_Text' (max = 255); use BLOB or TEXT instead
+SQL Statement:
+CREATE TABLE `NIIT`.`Questions` (
+  `Question_Id` CHAR(20) NOT NULL,
+  `Module_Id` CHAR(20) NULL,
+  `Question_Text` CHAR(900) NULL,
+  PRIMARY KEY (`Question_Id`))
+
+
+[17, 14:34:03] Apply changes to Questions: Preparing...
+[17, 14:34:06] Applying changes to Questions...: 
+[17, 14:34:11] Apply changes to Questions: Error 1074: Column length too big for column 'Question_Text' (max = 255); use BLOB or TEXT instead
+SQL Statement:
+CREATE TABLE `NIIT`.`Questions` (
+  `Question_Id` CHAR(20) NOT NULL,
+  `Module_Id` CHAR(20) NULL,
+  `Question_Text` CHAR(900) NULL,
+  PRIMARY KEY (`Question_Id`))
+
+
+[18, 14:34:36] Apply changes to Questions: Preparing...
+[18, 14:34:38] Applying changes to Questions...: 
+[1, 14:37:06] Apply changes to Questions: Preparing...
+[1, 14:37:08] Applying changes to Questions...: 
+[1, 14:37:08] : Changes applied to Questions
+[1, 14:37:11] Apply changes to Questions: Changes applied
+[2, 14:41:01] Apply changes to Student_Status: Preparing...
+[2, 14:41:03] Applying changes to Student_Status...: 
+[2, 14:41:03] : Changes applied to Student_Status
+[2, 14:41:04] Apply changes to Student_Status: Changes applied
+[3, 14:43:49] Apply changes to Faculty_Feedback: Preparing...
+[3, 14:43:51] Applying changes to Faculty_Feedback...: 
+[3, 14:43:51] : Changes applied to Faculty_Feedback
+[3, 14:43:52] Apply changes to Faculty_Feedback: Changes applied
+[4, 14:44:13] Apply changes to Faculty_Feedback: Preparing...
+[4, 14:44:18] Apply changes to Faculty_Feedback: 
+[5, 14:47:16] Apply changes to Student_Feedback: Preparing...
+[5, 14:47:18] Applying changes to Student_Feedback...: 
+[5, 14:47:18] : Changes applied to Student_Feedback
+[5, 14:47:19] Apply changes to Student_Feedback: Changes applied
+[6, 14:49:03] Apply changes to Login_Details: Preparing...
+[6, 14:49:05] Applying changes to Login_Details...: 
+[6, 14:49:05] : Changes applied to Login_Details
+[6, 14:49:07] Apply changes to Login_Details: Changes applied
+[1, 15:23:14] create database office: Running...
+[1, 15:23:14] create database office: 1 row(s) affected
+[2, 15:23:39] show databases: Running...
+[2, 15:23:39] show databases: Fetching...
+[2, 15:23:39] show databases: 7 row(s) returned
+[3, 15:24:18] create database office: Running...
+[3, 15:24:18] create database office: Error Code: 1007. Can't create database 'office'; database exists
+[4, 15:24:37] use office: Running...
+[4, 15:24:37] use office: 0 row(s) affected
+[5, 15:24:44] show databases: Running...
+[5, 15:24:44] show databases: Fetching...
+[5, 15:24:44] show databases: 7 row(s) returned
+[6, 15:25:51] create table Employee(id int,name char(20)): Running...
+[6, 15:25:51] create table Employee(id int,name char(20)): 0 row(s) affected
+[7, 15:26:23] insert into Employee values(1,"poornima"): Running...
+[7, 15:26:23] insert into Employee values(1,"poornima"): 1 row(s) affected
+[8, 15:27:08] insert into Employee values(2,"santhi"): Running...
+[8, 15:27:08] insert into Employee values(2,"santhi"): 1 row(s) affected
+[9, 15:27:08] insert into Employee values(3,"mahesh"): Running...
+[9, 15:27:08] insert into Employee values(3,"mahesh"): 1 row(s) affected
+[10, 15:27:29] select * from Employee
+LIMIT 0, 1000
+: Running...
+[10, 15:27:29] select * from Employee
+LIMIT 0, 1000
+: Fetching...
+[10, 15:27:29] select * from Employee
+LIMIT 0, 1000
+: 3 row(s) returned
+[11, 16:27:55] alter table Employee add(Gender char(20)): Running...
+[11, 16:27:55] alter table Employee add(Gender char(20)): 0 row(s) affected
+Records: 0  Duplicates: 0  Warnings: 0
+[12, 16:30:38] insert into Employee values(4,"mahesh","male"): Running...
+[12, 16:30:38] insert into Employee values(4,"mahesh","male"): 1 row(s) affected
+[13, 16:30:38] insert into Employee values(5,"harika","female"): Running...
+[13, 16:30:38] insert into Employee values(5,"harika","female"): 1 row(s) affected
+[14, 16:30:38] insert into Employee values(6,"ravi","male"): Running...
+[14, 16:30:38] insert into Employee values(6,"ravi","male"): 1 row(s) affected
+[1, 22:13:19] use office: Running...
+[1, 22:13:19] use office: 0 row(s) affected
+[2, 22:13:26] select * from Note
+LIMIT 0, 1000
+: Running...
+[2, 22:13:26] select * from Note
+LIMIT 0, 1000
+: Fetching...
+[2, 22:13:26] select * from Note
+LIMIT 0, 1000
+: 7 row(s) returned
+[3, 10:14:12] delete from Note: Running...
+[3, 10:14:12] delete from Note: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column. 
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[4, 10:39:01] select * from Note
+LIMIT 0, 1000
+: Running...
+[4, 10:39:01] select * from Note
+LIMIT 0, 1000
+: Fetching...
+[4, 10:39:01] select * from Note
+LIMIT 0, 1000
+: 12 row(s) returned
+[5, 10:42:45] select * from Note
+LIMIT 0, 1000
+: Running...
+[5, 10:42:45] select * from Note
+LIMIT 0, 1000
+: Fetching...
+[5, 10:42:45] select * from Note
+LIMIT 0, 1000
+: 12 row(s) returned
+[1, 20:29:41] create database muzix: Running...
+[1, 20:29:41] create database muzix: 1 row(s) affected
+[2, 21:13:42] select * from track
+LIMIT 0, 1000
+: Running...
+[2, 21:13:42] select * from track
+LIMIT 0, 1000
+: Error Code: 1146. Table 'office.track' doesn't exist
+[3, 21:14:22] use muzix: Running...
+[3, 21:14:22] use muzix: 0 row(s) affected
+[4, 21:14:22] select * from track
+LIMIT 0, 1000
+: Running...
+[4, 21:14:22] select * from track
+LIMIT 0, 1000
+: Fetching...
+[4, 21:14:22] select * from track
+LIMIT 0, 1000
+: 2 row(s) returned
+[5, 22:47:36] SELECT * FROM track where (name = "track" and id="3") or (name="track" and id=0)
+LIMIT 0, 1000
+: Running...
+[5, 22:47:36] SELECT * FROM track where (name = "track" and id="3") or (name="track" and id=0)
+LIMIT 0, 1000
+: Fetching...
+[5, 22:47:36] SELECT * FROM track where (name = "track" and id="3") or (name="track" and id=0)
+LIMIT 0, 1000
+: 1 row(s) returned
+[6, 22:48:11] SELECT * FROM track where (name="track" and id=0)
+LIMIT 0, 1000
+: Running...
+[6, 22:48:11] SELECT * FROM track where (name="track" and id=0)
+LIMIT 0, 1000
+: Fetching...
+[6, 22:48:11] SELECT * FROM track where (name="track" and id=0)
+LIMIT 0, 1000
+: 0 row(s) returned
+[7, 22:51:24] set @name = 'track': Running...
+[7, 22:51:24] set @name = 'track': 0 row(s) affected
+[8, 22:51:24] set @id = 0: Running...
+[8, 22:51:24] set @id = 0: 0 row(s) affected
+[9, 22:51:24] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: Running...
+[9, 22:51:24] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: Fetching...
+[9, 22:51:24] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: 1 row(s) returned
+[10, 22:52:36] set @name = null: Running...
+[10, 22:52:36] set @name = null: 0 row(s) affected
+[11, 22:52:36] set @id = 0: Running...
+[11, 22:52:36] set @id = 0: 0 row(s) affected
+[12, 22:52:36] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: Running...
+[12, 22:52:36] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: Fetching...
+[12, 22:52:36] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: 3 row(s) returned
+[13, 22:52:56] set @name = null: Running...
+[13, 22:52:56] set @name = null: 0 row(s) affected
+[14, 22:52:56] set @id = 2: Running...
+[14, 22:52:56] set @id = 2: 0 row(s) affected
+[15, 22:52:56] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: Running...
+[15, 22:52:56] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: Fetching...
+[15, 22:52:56] SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id)
+LIMIT 0, 1000
+: 1 row(s) returned
+[16, 11:15:15] use muzix: Running...
+[16, 11:15:15] use muzix: 0 row(s) affected
+[17, 11:15:15] select * from track
+LIMIT 0, 1000
+: Running...
+[17, 11:15:15] select * from track
+LIMIT 0, 1000
+: Fetching...
+[17, 11:15:15] select * from track
+LIMIT 0, 1000
+: 5 row(s) returned
+[1, 14:24:23] use muzix: Running...
+[1, 14:24:23] use muzix: 0 row(s) affected
+[2, 14:24:23] select * from track
+LIMIT 0, 1000
+: Running...
+[2, 14:24:23] select * from track
+LIMIT 0, 1000
+: Fetching...
+[2, 14:24:23] select * from track
+LIMIT 0, 1000
+: 6 row(s) returned
+[3, 15:57:49] commit: Running...
+[3, 15:57:49] commit: 0 row(s) affected
+[4, 15:57:52] commit: Running...
+[4, 15:57:52] commit: 0 row(s) affected
+[5, 16:00:58] SELECT * FROM track
+LIMIT 0, 1000
+: Running...
+[5, 16:00:58] SELECT * FROM track
+LIMIT 0, 1000
+: Fetching...
+[5, 16:00:58] SELECT * FROM track
+LIMIT 0, 1000
+: 6 row(s) returned
+[6, 16:01:00] SELECT * FROM track
+LIMIT 0, 1000
+: Running...
+[6, 16:01:00] SELECT * FROM track
+LIMIT 0, 1000
+: Fetching...
+[6, 16:01:00] SELECT * FROM track
+LIMIT 0, 1000
+: 6 row(s) returned
+[7, 16:01:16] DROP TABLE `muzix`.`track`: Running...
+[7, 16:01:16] DROP TABLE `muzix`.`track`: 0 row(s) affected
+[8, 16:02:02] SELECT * FROM track
+LIMIT 0, 1000
+: Running...
+[8, 16:02:02] SELECT * FROM track
+LIMIT 0, 1000
+: Fetching...
+[8, 16:02:02] SELECT * FROM track
+LIMIT 0, 1000
+: 30 row(s) returned

@@ -1,0 +1,48 @@
+create database college;
+show databases;
+use college;
+create table student(id int primary key ,name char(25));
+insert into student values(1,"abc");
+desc student;
+
+create database NIIT;
+use NIIT;
+CREATE TABLE IF NOT EXISTS `NIIT`.`FacultyDetails` (
+  `Faculty_Id` CHAR(20) NOT NULL,
+  `Title` CHAR(7) NULL,
+  `Faculty_Name` CHAR(30) NULL,
+  `Faculty_Location` CHAR(30) NULL COMMENT '	',
+  `Faculty_Track` CHAR(15) NULL,
+  `Faculty_Qualification` CHAR(100) NULL,
+  `Faculty_Experiance` INT NULL,
+  `Faculty_Email` CHAR(100) NULL,
+  `Faculty_Password` CHAR(20) NULL,
+  `FacultyDetailscol` VARCHAR(45) NULL,
+  PRIMARY KEY (`Faculty_Id`))
+ENGINE = InnoDB
+
+
+
+create database muzix;
+show databases;
+use office;
+create table Employee(id int,name char(20));
+insert into Employee values(1,"poornima");
+insert into Employee values(2,"santhi");
+insert into Employee values(3,"mahesh");
+Employeetrackuse muzix;
+select * from track;
+
+
+alter table Employee add(Gender char(20));
+
+insert into Employee values(4,"mahesh","male");
+insert into Employee values(5,"harika","female");
+insert into Employee values(6,"ravi","male");
+
+set @name = null;
+set @id = 2;
+SELECT * FROM track where (@name is null or name = @name) and (@id = 0 or id = @id);
+
+
+commit;

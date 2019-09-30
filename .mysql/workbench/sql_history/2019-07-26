@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ENTRY timestamp='02:24:23  IST'>use muzix</ENTRY>
+<ENTRY timestamp='~'>select * from track</ENTRY>
+<ENTRY timestamp='03:57:49  IST'>commit</ENTRY>
+<ENTRY timestamp='03:57:52  IST'>~</ENTRY>
+<ENTRY timestamp='04:00:58  IST'>SELECT * FROM track</ENTRY>
+<ENTRY timestamp='04:01:00  IST'>~</ENTRY>
+<ENTRY timestamp='04:01:16  IST'>DROP TABLE `muzix`.`track`</ENTRY>
+<ENTRY timestamp='04:02:02  IST'>SELECT * FROM track</ENTRY>

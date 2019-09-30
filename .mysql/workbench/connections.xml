@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<data grt_format="2.0">
+  <value _ptr_="0x562d621f9740" type="list" content-type="object" content-struct-name="db.mgmt.Connection">
+    <value type="object" struct-name="db.mgmt.Connection" id="fb3d7114-a211-11e9-8550-1002b5e83906" struct-checksum="0x96ba47d8">
+      <link type="object" struct-name="db.mgmt.Driver" key="driver">com.mysql.rdbms.mysql.driver.native</link>
+      <value type="string" key="hostIdentifier">Mysql@localhost:3306</value>
+      <value type="int" key="isDefault">0</value>
+      <value _ptr_="0x562d629ae410" type="dict" key="modules"/>
+      <value _ptr_="0x562d62982f20" type="dict" key="parameterValues">
+        <value type="string" key="hostName">localhost</value>
+        <value type="int" key="port">3306</value>
+        <value type="string" key="userName">root</value>
+      </value>
+      <value type="string" key="name">Local instance 3306</value>
+      <link type="object" struct-name="GrtObject" key="owner">02f2caef-b740-11e9-ab22-1002b5e83906</link>
+    </value>
+    <value type="object" struct-name="db.mgmt.Connection" id="8d3cd1df-a216-11e9-8550-1002b5e83906" struct-checksum="0x96ba47d8">
+      <link type="object" struct-name="db.mgmt.Driver" key="driver">com.mysql.rdbms.mysql.driver.native</link>
+      <value type="string" key="hostIdentifier">Mysql@127.0.0.1:3306</value>
+      <value type="int" key="isDefault">0</value>
+      <value _ptr_="0x562d62984d60" type="dict" key="modules"/>
+      <value _ptr_="0x562d62986410" type="dict" key="parameterValues">
+        <value type="string" key="DbSqlEditor:LastDefaultSchema">office</value>
+        <value type="string" key="SQL_MODE"></value>
+        <value type="string" key="hostName">127.0.0.1</value>
+        <value type="int" key="lastConnected">1564131247</value>
+        <value type="string" key="password"></value>
+        <value type="int" key="port">3306</value>
+        <value type="string" key="schema"></value>
+        <value type="string" key="serverVersion">5.7.27-0ubuntu0.18.04.1</value>
+        <value type="string" key="sslCA"></value>
+        <value type="string" key="sslCert"></value>
+        <value type="string" key="sslCipher"></value>
+        <value type="string" key="sslKey"></value>
+        <value type="int" key="useSSL">1</value>
+        <value type="string" key="userName">poornima</value>
+      </value>
+      <value type="string" key="name">poornima</value>
+      <link type="object" struct-name="GrtObject" key="owner">02f2caef-b740-11e9-ab22-1002b5e83906</link>
+    </value>
+  </value>
+</data>

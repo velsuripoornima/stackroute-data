@@ -1,0 +1,20 @@
+(function (){
+if (!rabbit.customer) {
+	rabbit.customer = {};
+}
+if (!rabbit.customer.containerOptions) {
+	rabbit.customer.containerOptions = {};
+}
+rabbit.customer.containerOptions = {
+
+};
+})();
+(function (){
+if (!rabbit.customer) {
+	rabbit.customer = {};
+}
+if (!rabbit.customer.reactionOptions) {
+	rabbit.customer.reactionOptions = {};
+}
+rabbit.customer.reactionOptions = {};
+})();

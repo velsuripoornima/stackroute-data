@@ -1,0 +1,22 @@
+<p>addmaterialsbutton works!</p>
+<button mat-raised-button color="primary" (click)=openDialog()>Base Prices</button>
+      <table border="2">
+        <tr>
+        
+          <th>Product Name</th>
+          <th>BasePrice</th>
+        </tr>
+         <tr *ngFor="let base of baseprice">  
+
+            <td>Product Name: {{base.name}}</td>
+              
+               <td>BasePrice: {{base.price}}</td> 
+             
+          
+        </tr>
+        </table>   
+     
+
+         
+            
+   

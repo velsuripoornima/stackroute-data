@@ -1,0 +1,9 @@
+    <form class="search">
+    <mat-form-field>
+        <input matInput type="search" placeholder="search for music" required #searchString>
+        
+    </mat-form-field>
+    <button mat-button mat-mini-fab (click)=getLastFmTracks(searchString.value)>
+            <mat-icon aria-hidden="false" aria-label="Example search icon">search</mat-icon>
+          </button>
+</form>

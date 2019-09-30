@@ -1,0 +1,103 @@
+body{
+	margin:-10px;
+}
+.grid-container {
+  /**/
+  /*grid-template-columns: 200px auto ;*/
+  
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+background-color: yellow;
+}
+.abc img{
+	font-size: 50px;
+	width: 146px;
+
+}
+.abcitem h2{
+	color: blue;
+
+}
+.abcitem li {
+	display: inline;
+	float:left;
+	margin-right: 10px;
+	text-align: center;
+	
+	font-size: 15px;
+
+}
+.abcitem li a{
+	text-decoration: none;
+}
+.abcitem li a:hover{
+	font-size: 20px;
+
+}
+.hero-container{
+	padding: 30px;
+	margin-top: 200px;
+	background-image: url("home1.jpeg");
+}
+.hero-item{
+	margin-top: 200px;
+	text-align: center;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.secondnav{
+	/*background-color: #999;*/
+	margin-top: -10px;
+	overflow: hidden;
+}
+.secondnav img{
+	width: 141px;
+	margin-top: 200px;
+}
+.secondnavitem li{
+	margin-top: 100px;
+	display: inline;
+	padding: 10px;
+	text-decoration: none;
+}
+.secondnavitem li a{
+	text-decoration: none;
+}
+.secondnavitem li a:hover{
+	text-decoration: none;
+background-color: white
+}
+header{
+	font-size: 35px;
+}
+.images li{
+	grid-template-columns: auto auto ;
+	display: inline;
+	margin: 75px;
+}
+#navbar{
+	overflow: hidden;
+}
+.container_12 .grid_4{
+	
+	display: inline;
+	/*grid-template-columns: 100px 100px 100px;*/
+}
+.alpha{
+	margin-left: 0px;
+}
+
+.secondgrid li a{
+	text-decoration: none;
+}
+footer{
+	position: fixed;
+	width:100%;
+	text-align: center;
+	background-color: #f1f1f1;
+	bottom: 10px;
+}
